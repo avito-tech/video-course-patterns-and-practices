@@ -1,0 +1,45 @@
+admin_product_add_or_edit:
+  path: /admin/product/add
+  controller: Controller\AdminController::addProductAction
+  methods: POST
+
+admin_product_edit:
+  path: /admin/product/edit
+  controller: Controller\AdminController::editProductAction
+  methods: POST
+
+admin_product_change_visibility:
+  path: /admin/product/visibility
+  controller: Controller\AdminController::changeVisibilityProductAction
+  methods: POST
+
+order_info:
+  path: /order/info/{userId}
+  controller: Controller\OrderController::infoAction
+
+order_check_product_in_basket:
+  path: /order/info/{userId}/{productId}
+  controller: Controller\OrderController::checkProductInBasketAction
+
+order_add_product:
+  path: /order/add
+  controller: Controller\OrderController::addProductAction
+  methods: POST
+
+order_remove_product:
+  path: /order/delete
+  controller: Controller\OrderController::removeProductAction
+  methods: POST
+
+order_checkout:
+  path: /order/checkout/{userId}
+  controller: Controller\OrderController::checkoutAction
+  methods: POST
+
+product_list:
+  path: /product/list
+  controller: Controller\ProductController::listAction
+
+product_info:
+  path: /product/info/{id}
+  controller: Controller\ProductController::infoAction

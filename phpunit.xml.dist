@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+        backupGlobals="false"
+        bootstrap="vendor/autoload.php"
+        colors="true"
+>
+
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+    </coverage>
+
+    <testsuites>
+        <testsuite name="project">
+            <directory>./test</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

@@ -1,0 +1,3 @@
+curl --location '127.0.0.1:8080/order/checkout/1' \
+--form 'promoCode="new_10"' \
+--form 'billingType="card"'

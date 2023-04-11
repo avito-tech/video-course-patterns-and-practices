@@ -1,0 +1,15 @@
+parameters:
+  db.path: 'data/database.sqlite'
+
+services:
+  _defaults:
+    autowire: true
+    public: true
+
+  App\Db\DbProvider:
+    arguments:
+      $dbPath: '%db.path%'
+
+  App\Kernel: ~
+  Symfony\Component\Routing\RequestContext: ~
+  Symfony\Component\HttpKernel\Controller\ArgumentResolver: ~

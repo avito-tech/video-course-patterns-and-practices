@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  app:
+    build: .
+    ports:
+      - '8080:8080'
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: composer run-script srv.on

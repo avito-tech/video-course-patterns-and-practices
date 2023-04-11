@@ -1,0 +1,5 @@
+curl --location '127.0.0.1:8080/admin/product/edit' \
+--form 'id="5"' \
+--form 'name="Костюм бэтмена10"' \
+--form 'price="25001"' \
+--form 'isHidden="true"'

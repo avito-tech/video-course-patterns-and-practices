@@ -1,0 +1,29 @@
+imports:
+  - { resource: framework/*.yml }
+
+
+parameters:
+  environment: dev
+
+
+services:
+  _defaults:
+    autowire: true
+    public: true
+
+  # Controllers
+  Controller\AdminController: ~
+  Controller\ProductController: ~
+  Controller\OrderController: ~
+
+  # Services
+  Service\Product\Product: ~
+  Service\Order\Basket: ~
+  Service\Order\Checkout: ~
+  Service\Billing\Creator: ~
+  Service\Communication\Creator: ~
+  Service\Discount\Creator: ~
+
+  # Models
+  Model\Repository\Product: ~
+  Model\Repository\Basket: ~
